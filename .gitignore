@@ -1,0 +1,11 @@
+/.classpath
+/.project
+/.settings/
+/.gradle/
+/target/
+/build/
+/bin/
+*.log
+/.tern-project
+.factorypath
+settings.json

@@ -1,0 +1,14 @@
+# Random Pdf Generator
+
+Simple utility project to create PDF files with random content.
+Default configuration generates random words from simple english words dictionary.
+
+## Usage
+
+```java
+PdfGenerator pdfGenerator = PdfGenerator.createDefault();
+try (FileOutputStream fos = new FileOutputStream(new File("test.pdf"))) {
+	pdfGenerator.writePages(20, fos);
+}
+```
+
