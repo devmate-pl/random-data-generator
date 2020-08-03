@@ -16,9 +16,9 @@
 
 	<distributionManagement>
 		<repository>
-			<id>github-devmate-pl-public</id>
+			<id>github-devmate-pl</id>
 			<name>GitHub devmate-pl Apache Maven Packages</name>
-			<url>https://maven.pkg.github.com/devmate-pl/maven-public</url>
+			<url>https://maven.pkg.github.com/devmate-pl</url>
 		</repository>
 	</distributionManagement>
 
