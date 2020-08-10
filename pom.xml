@@ -12,13 +12,15 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<maven.compiler.source>11</maven.compiler.source>
 		<maven.compiler.target>11</maven.compiler.target>
+		<bintray.repo>devmate/maven-public</bintray.repo>
+		<bintray.package>random-data-generator</bintray.package>
 	</properties>
 
 	<distributionManagement>
 		<repository>
-			<id>github-devmate-pl</id>
-			<name>GitHub devmate-pl Apache Maven Packages</name>
-			<url>https://maven.pkg.github.com/devmate-pl</url>
+			<id>bintray-devmate-maven-public</id>
+			<name>devmate-maven-public</name>
+			<url>https://api.bintray.com/maven/${bintray.repo}/${bintray.package}/;publish=1</url>
 		</repository>
 	</distributionManagement>
 
@@ -35,4 +37,21 @@
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
+
+	<build>
+		<pluginManagement>
+			<plugins>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-jar-plugin</artifactId>
+					<version>2.3.2</version>
+				</plugin>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-source-plugin</artifactId>
+					<version>2.1.2</version>
+				</plugin>
+			</plugins>
+		</pluginManagement>
+	</build>
 </project>
