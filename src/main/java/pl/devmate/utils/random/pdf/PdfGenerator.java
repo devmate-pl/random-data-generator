@@ -1,6 +1,5 @@
 package pl.devmate.utils.random.pdf;
 
-import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.OutputStream;
 
@@ -28,7 +27,7 @@ public class PdfGenerator {
 		paragraphWriter.writeRandomParagraphs(wordsInParagraph, paragraphsCount, outputStream);
 	}
 
-	public void writePages(int pagesCount, FileOutputStream fos) throws IOException {
+	public void writePages(int pagesCount, OutputStream fos) throws IOException {
 		PdfWriterPages pagesWriter = new PdfWriterPages(wordProducer);
 		pagesWriter.writeRandomPages(pagesCount, fos);
 	}
